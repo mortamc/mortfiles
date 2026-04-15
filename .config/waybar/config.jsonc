@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height": 20,
+    "spacing": 6,
+    "modules-left": ["hyprland/workspaces", "custom/browser", "custom/files", "custom/prism", "custom/steam", "custom/discord", "wlr/taskbar", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/player-prev", "mpris", "custom/player-next", "cpu", "memory", "custom/ping", "custom/weather", "pulseaudio", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {"*": 4}
+    },
+
+    "hyprland/window": {
+        "format": " {title}",
+        "max-length": 30,
+        "separate-outputs": true
+    },
+
+    "custom/browser": { 
+        "format": "󰈹", 
+        "on-click": "zen-browser", 
+        "tooltip-format": "Zen Browser" 
+    },
+    "custom/files": { "format": "", "on-click": "dolphin", "tooltip-format": "Dolphin" },
+    "custom/prism": { "format": "", "on-click": "prismlauncher", "tooltip-format": "Prism Launcher" },
+    "custom/steam": { "format": "", "on-click": "steam", "tooltip-format": "Steam" },
+    "custom/discord": { "format": "", "on-click": "discord", "tooltip-format": "Discord" },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+
+    "clock": {
+        "format": "{:%A / %H:%M / %d/%m/%y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/player-prev": {
+        "format": "󰒮",
+        "on-click": "playerctl previous",
+        "tooltip": false
+    },
+    "custom/player-next": {
+        "format": "󰒭",
+        "on-click": "playerctl next",
+        "tooltip": false
+    },
+    "mpris": {
+        "format": "󰈹 {title}",
+        "format-paused": "󰈹 <i>{title}</i>",
+        "max-length": 40,
+        "on-click": "playerctl play-pause"
+    },
+
+    "cpu": { "format": "  {usage}%", "tooltip": false },
+    "memory": { "format": "  {}%", "tooltip": false },
+    
+    "custom/ping": {
+        "exec": "ping -c 1 -W 1 1.1.1.1 | grep time= | cut -d '=' -f 4 || echo 'X'",
+        "interval": 3,
+        "format": "  {}"
+    },
+
+    "custom/weather": {
+        "exec": "curl -s 'https://wttr.in/Rivadavia,Mendoza?format=%t' | grep -v -e 'available' -e '<' || echo '--°C'",
+        "interval": 900,
+        "format": " {}",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  Mute",
+        "format-icons": {"default": ["", "", ""]},
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "tray": {"spacing": 10}
+}

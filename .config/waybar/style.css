@@ -1,0 +1,88 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    box-shadow: none;
+}
+
+window#waybar {
+    background-color: rgba(15, 5, 25, 0.25);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+#workspaces button {
+    color: #e0b3ff;
+    padding: 0 8px;
+    background: transparent;
+}
+#workspaces button.active {
+    color: #bc00ff;
+    text-shadow: 0px 0px 5px rgba(188, 0, 255, 0.8);
+}
+#workspaces button:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgba(188, 0, 255, 1);
+}
+
+#window {
+    color: #e0b3ff; /* Morado suave */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0 15px;
+    margin: 4px 5px;
+    border-radius: 10px;
+}
+
+#custom-browser, #custom-files, #custom-prism, #custom-steam, #custom-discord {
+    color: #e0b3ff;
+    padding: 0 10px;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+#custom-browser:hover, #custom-files:hover, #custom-prism:hover, #custom-steam:hover, #custom-discord:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#taskbar button {
+    padding: 0 8px;
+    margin: 4px 2px;
+}
+#taskbar button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#clock {
+    color: #ffffff;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0 20px;
+    margin: 4px 0px;
+    border-radius: 15px;
+}
+
+#mpris, #cpu, #memory, #custom-ping, #custom-weather, #pulseaudio, #tray {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 15px;
+    margin: 4px 4px;
+    padding: 0 12px;
+}
+
+#custom-player-prev, #custom-player-next {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: #e0b3ff;
+}
+
+#mpris { color: #e0b3ff; } /* Morado suave */
+#cpu { color: #ffb3ba; }            
+#memory { color: #baffc9; }         
+#custom-ping { color: #fdfd96; } 
+#custom-weather { color: #bae1ff; } 
+#pulseaudio { color: #e0b3ff; }

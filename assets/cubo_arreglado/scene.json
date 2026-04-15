@@ -1,0 +1,270 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : true,
+		"bloomhdrfeather" : 0.1,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 1.619,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 0.49000001,
+		"bloomthreshold" : 0.47,
+		"bloomtint" : "1.00000 1.00000 1.00000",
+		"camerafade" : true,
+		"cameraparallax" : true,
+		"cameraparallaxamount" : 0.029999999,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.0,
+		"camerapreview" : true,
+		"camerashake" : true,
+		"camerashakeamplitude" : 0.64999998,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 1.23,
+		"clearcolor" : "0.00000 0.00000 0.00000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"gravitydirection" : "0.00000 -1.00000 0.00000",
+		"gravitystrength" : 1.0,
+		"hdr" : false,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 1080,
+			"width" : 1920
+		},
+		"perspectiveoverridefov" : 50.0,
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"winddirection" : "0.70700 0.70700 0.00000",
+		"windenabled" : false,
+		"windstrength" : 1.0,
+		"zoom" : 1.5
+	},
+	"objects" : 
+	[
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 172,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0,
+								"color" : "0.3686274509803922 0.17647058823529413 0.38823529411764707"
+							},
+							"id" : 173
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/filmgrain/effect.json",
+					"id" : 187,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"exponent" : 0.85000002,
+								"scale" : 20,
+								"strength" : 1.9
+							},
+							"id" : 188
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 168,
+			"image" : "models/The_motion_of_two_million_stars_pillars.json",
+			"name" : "The_motion_of_two_million_stars_pillars",
+			"origin" : "962.60254 540.00000 0.00000",
+			"size" : "1920.00000 1080.00000"
+		},
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 130,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"bounds" : "0 1",
+								"friction" : "1 1",
+								"speed" : 1.0,
+								"strength" : 0.1
+							},
+							"id" : 131,
+							"textures" : 
+							[
+								null,
+								"masks/shake_mask_681d95af21112ea41fc4cd51aa49d9c553ef1173",
+								null
+							]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 13,
+			"image" : "models/end crystal.json",
+			"name" : "end crystal",
+			"origin" : "1021.59515 433.68774 0.00000",
+			"size" : "1920.00000 1080.00000"
+		},
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"disablepropagation" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/tint/effect.json",
+					"id" : 204,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 0.34,
+								"color" : "0.2784313725490196 0 1"
+							},
+							"id" : 205
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/vhs/effect.json",
+					"id" : 207,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"artifacts" : 0.19,
+								"chromatic" : 0.12,
+								"distortionspeed" : 0.14,
+								"distortionstrength" : 1.21,
+								"distortionwidth" : 1.0,
+								"scale" : 0.30000001,
+								"strength" : 1.0
+							},
+							"id" : 208
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/shine/effect.json",
+					"id" : 212,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"noiseamount" : 1,
+								"noisescale" : 8.6899996,
+								"noisespeed" : 0.0099999998,
+								"raythreshold" : 0.5
+							},
+							"id" : 213
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"color" : "1 1 1",
+								"direction" : 0.0,
+								"rayintensity" : 1.0,
+								"raylength" : 0.1,
+								"speed" : 0.0
+							},
+							"id" : 214
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 215
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 216
+						},
+						{
+							"id" : 217
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/clouds/effect.json",
+					"id" : 243,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 0.40000001,
+								"colorend" : "0.6745098039215687 0 1",
+								"colorstart" : "0.09803921568627451 0 0.6549019607843137",
+								"feather" : 0.92000002,
+								"scale" : "1.3 1.3 0.5 0.5",
+								"smoothness" : 0,
+								"speed" : "0.01 -0.02",
+								"threshold" : 0
+							},
+							"id" : 244
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 202,
+			"image" : "models/util/composelayer.json",
+			"name" : "Compose",
+			"origin" : "960.00000 540.00000 0.00000",
+			"size" : "1920.00000 1080.00000"
+		}
+	],
+	"version" : 1
+}

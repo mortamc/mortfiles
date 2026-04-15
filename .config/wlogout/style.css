@@ -1,0 +1,45 @@
+window {
+    font-family: monospace;
+    font-size: 14pt;
+    color: #ffffff;
+    /* Color de fondo por si la imagen tarda en cargar */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Acá cargamos tu imagen universal */
+    background-image: url("../assets/login_bg_blur.png");
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(40, 40, 40, 0.6);
+    margin: 10px;
+    /* Animación ultra rápida para que no se sienta lento */
+    transition: background-color 0.1s ease-in-out;
+    color: white;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 255, 0.8);
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
